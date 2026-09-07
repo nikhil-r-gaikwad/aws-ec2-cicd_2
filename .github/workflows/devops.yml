@@ -151,9 +151,9 @@ jobs:
             echo "4. Restarting PM2 application..."
 
             if pm2 describe node-cicd-demo > /dev/null 2>&1; then
-                APP_ENV=PROD pm2 restart node-cicd-demo --update-env
+                APP_ENV=main pm2 restart node-cicd-demo --update-env
             else
-                APP_ENV=PROD pm2 start node-cicd-demo --update-env
+                APP_ENV=main pm2 start node-cicd-demo --update-env
             fi
 
 
