@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     });
 
     res.end(`
-        <body style="background-color: #7da1dc;">
+        <body style="background-color: #e09155;">
         <h1>Hello this is ${APP_ENV} env !!</h1>
         <p>Application deployed using GitHub Actions → AWS EC2</p>
         <p>Environment: <strong>${APP_ENV}</strong></p>
